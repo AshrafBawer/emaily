@@ -7,15 +7,17 @@ module.exports = (app) => {
     }));
 
     // this time it will redirect back go googleStartegy and run the callback
-    app.get('/auth/google/callback', passport.authenticate('google'));
+    app.get('/auth/google/callback', passport.authenticate('google'), (req,res) => {
+        res.redirect('/surways');
+    });
 
-    app.get('/current_user', (req,res) => {
+    app.get('/api/current_user', (req,res) => {
         res.send(req.user);
     })
 
-    app.get('/logout', (req,res) => {
+    app.get('/api/logout', (req,res) => {
         req.logout();
-        res.send('User Logged out');
+        res.redirect('/');
     })
 
     app.get('/', (req,res) => {

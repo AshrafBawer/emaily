@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Ashraf\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add concurrently --save-dev
+
+PATH: 
+  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Ashraf\AppData\Local\Yarn\Data\global;C:\Program Files (x86)\mongodb-win32-x86_64-2008plus-ssl-4.0.8\bin;C:\Program Files (x86)\Java\jre1.8.0_251\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Redis\;search-ms:displayname=Search%20Results%20in%20node_modules&crumb=location:C%3A%5CUsers%5CAshraf%5CAppData%5CRoaming%5Cnpm%5Cnode_modules\create-react-app;C:\Program Files\Calibre2\;C:\Users\Ashraf\AppData\Local\Microsoft\WindowsApps;C:\Users\Ashraf\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ashraf\AppData\Roaming\npm;C:\Users\Ashraf\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+
+npm manifest: 
+  {
+    "name": "emaily",
+    "version": "1.0.0",
+    "description": "an application to get feedback from users faster",
+    "main": "index.js",
+    "engines": {
+      "node": "12.16.1",
+      "npm": "6.13.4"
+    },
+    "scripts": {
+      "start": "node index.js",
+      "server": "nodemon index.js",
+      "client": "npm run start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Ashraf Bawer",
+    "license": "ISC",
+    "dependencies": {
+      "cookie-session": "^1.4.0",
+      "express": "^4.17.1",
+      "mongoose": "^5.9.15",
+      "passport": "^0.4.1",
+      "passport-google-oauth20": "^2.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
